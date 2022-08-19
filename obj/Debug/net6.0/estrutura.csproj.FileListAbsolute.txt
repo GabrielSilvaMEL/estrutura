@@ -1,0 +1,5 @@
+C:\Users\Aluno\Documents\GitHub\estrutura\obj\Debug\net6.0\estrutura.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\GitHub\estrutura\obj\Debug\net6.0\estrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\GitHub\estrutura\obj\Debug\net6.0\estrutura.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\GitHub\estrutura\obj\Debug\net6.0\estrutura.AssemblyInfo.cs
+C:\Users\Aluno\Documents\GitHub\estrutura\obj\Debug\net6.0\estrutura.csproj.CoreCompileInputs.cache
