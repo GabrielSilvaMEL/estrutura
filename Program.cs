@@ -10,7 +10,7 @@ while (op1 != "3"){
     if (op1 == "1"){
         int n1 = 0;
         int n2 = 0;
-        string op2 = 0;
+        string op2 = "0";
 
         Console.WriteLine("Digite um número inicial: ");
         n1 = int.Parse(Console.ReadLine());
@@ -35,12 +35,14 @@ while (op1 != "3"){
         Console.WriteLine("Você escolheu Decrescente");
 
 
-        //funções
+        
+    }
+    //funções
         void Crescente(int nI,int nF){
             if (nI <= nF){
-                Console.WriteLine(nI, nF);
-                
-            }
+                Console.WriteLine(nI);
+                Crescente(nI + 1, nF);
+            }    
+            
         }
-    }
 }
