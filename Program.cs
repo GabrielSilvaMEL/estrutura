@@ -4,6 +4,7 @@ while (op1 != "3"){
     Console.WriteLine("MENU PRINCIPAL");
     Console.WriteLine("1 - Funções sem vetor");
     Console.WriteLine("2 - Funções com vetor");
+    Console.WriteLine();
     Console.WriteLine("Digite a opção desejada:");
     op1 = Console.ReadLine();
     if (op1 == "1"){
@@ -26,10 +27,15 @@ while (op1 != "3"){
         op2 = int.Parse(Console.ReadLine());
 
         //opção 1
-        
-
+        if (op2 == "1" ){
+        Console.WriteLine("Você escolheu Crescente");
+        }
         //opção 2
-        if (op2 == 2){
+        Console.WriteLine("Você escolheu Decrescente");
+
+
+        //funções
+        void Crescente(){
 
         }
     }
