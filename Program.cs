@@ -7,11 +7,11 @@ while (op1 != "3"){
     Console.WriteLine();
     Console.WriteLine("Digite a opção desejada:");
     op1 = Console.ReadLine();
+    int x = 0;
     if (op1 == "1"){
         int n1 = 0;
         int n2 = 0;
         string op2 = "0";
-
         Console.WriteLine("Digite um número inicial: ");
         n1 = int.Parse(Console.ReadLine());
 
@@ -36,25 +36,45 @@ while (op1 != "3"){
         Console.WriteLine("Você escolheu Decrescente");
         Decrescente(n1,n2);
         }
+        if (op2 == "3" ){
+        Console.WriteLine("Você escolheu Impares");
+        Impares(n1,n2);
+        } 
 
-        
+        if (op2 == "4" ){
+            
+        Console.WriteLine("Você escolheu somatória");
+        Somatorio(n1,n2);
+        Console.WriteLine("A Soma dos números entre "+n1 + " e " +n2+ " é: "+x);
+        }      
     }
     //funções
         void Crescente(int nI,int nF){
             if (nI <= nF){
                 Console.WriteLine(nI);
                 Crescente(nI + 1, nF);
+                Console.ReadKey();
             }    
             
         }
         void Decrescente(int nI,int nF){
             if (nI<=nF){
-                Decrescente(nI - 1, nF);
-                Console.WriteLine(nI);
+                Console.WriteLine(nF);
+                Decrescente(nI,nF - 1);               
             }
         }
         void Impares(int nI, int nF){
-            if (nI % 2 != 0)
+            if (nI % 2 != 0){
+                Console.WriteLine("Seu número é ímpar");
                 Console.WriteLine(nI);
+            }
         }
+        void Somatorio(int nI,int nF){
+            while (nI<=nF){
+                x = (x + nF);
+                nF = nF -1; 
+                Console.WriteLine(x);         
+            }
+        }
+    Console.ReadKey();
 }
