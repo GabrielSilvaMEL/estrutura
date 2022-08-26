@@ -32,8 +32,10 @@ while (op1 != "3"){
             Crescente(n1,n2);
         }
         //opção 2
+        if (op2 == "2" ){
         Console.WriteLine("Você escolheu Decrescente");
-
+        Decrescente(n1,n2);
+        }
 
         
     }
@@ -44,5 +46,15 @@ while (op1 != "3"){
                 Crescente(nI + 1, nF);
             }    
             
+        }
+        void Decrescente(int nI,int nF){
+            if (nI<=nF){
+                Decrescente(nI - 1, nF);
+                Console.WriteLine(nI);
+            }
+        }
+        void Impares(int nI, int nF){
+            if (nI % 2 != 0)
+                Console.WriteLine(nI);
         }
 }
