@@ -17,7 +17,7 @@ if (op == "1" ){
     Console.WriteLine("Digite outro número: ");
     int y = int.Parse(Console.ReadLine());
 
-    Potencia(x,y);
+    Console.WriteLine(Potencia(x,y));
 }
 
  int Potencia(int x,int y){
@@ -67,14 +67,15 @@ if (op == "4" ){
     Console.WriteLine("Você escolheu Fbionacci");
     Console.WriteLine("Digite um número: ");
     int n = int.Parse(Console.ReadLine());
-    Fibonacci(n);
+    // Fibonacci(n);
 }
+Console.ReadKey();
 
-int Fibonacci(int n){
-    if (n == 0 && n == 1){
-        return n;
-    }
-    else if (n >= 2){
-        return (Fibonacci(n-1) + Fibonacci(n-2));
-    }
-}
+// int Fibonacci(int n){
+//     if (n == 0 && n == 1){
+//         return n;
+//     }
+//     else if (n >= 2){
+//         return Fibonacci(n-1) + Fibonacci(n-2);
+//     }
+// }
