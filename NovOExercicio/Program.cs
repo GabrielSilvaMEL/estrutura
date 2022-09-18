@@ -23,7 +23,7 @@ if (op == "1" ){
  int Potencia(int x,int y){
     int r = 1;
     int m = x;
-    if (y >=r){
+    if (y >= r){
         x = x * m;
         r = r + 1;
     }
