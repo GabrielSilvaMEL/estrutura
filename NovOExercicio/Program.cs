@@ -7,7 +7,7 @@ Console.WriteLine("4 - Somatório");
 Console.Write("Opção desejada: ");
 string op = Console.ReadLine();
 
-        //opção 1
+    //opção 1
 if (op == "1" ){
     Console.WriteLine("Você escolheu Potencia");
 
@@ -63,18 +63,17 @@ int Mdc(int x,int y){
     }
 }
 if (op == "4" ){
-    Console.WriteLine("Você escolheu Fbionacci");
+    Console.WriteLine("Você escolheu Fibonacci");
     Console.WriteLine("Digite um número: ");
     int n = int.Parse(Console.ReadLine());
-    // Fibonacci(n);
+    Fibonacci(n);
+}
+int Fibonacci(int n){
+    if (n == 0 && n == 1){
+        Console.WriteLine(n);
+    }
+    else if (n >= 2){
+        Console.WriteLine(Fibonacci(n-1) + Fibonacci(n-2));
+    }
 }
 Console.ReadKey();
-
-// int Fibonacci(int n){
-//     if (n == 0 && n == 1){
-//         return n;
-//     }
-//     else if (n >= 2){
-//         return Fibonacci(n-1) + Fibonacci(n-2);
-//     }
-// }
