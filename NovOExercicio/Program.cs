@@ -19,8 +19,7 @@ if (op == "1" ){
 
     Console.WriteLine(Potencia(x,y));
 }
-
- int Potencia(int x,int y){
+int Potencia(int x,int y){
     int r = 1;
     int m = x;
     if (y >= r){
